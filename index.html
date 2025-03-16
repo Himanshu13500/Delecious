@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dil-E-Cious - Healthy Makhana Snacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="cart.html">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Dil-E-Cious Logo" data-src="logo.png">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#shop"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="#recipes"><i class="fas fa-utensils"></i> Recipes</a></li>
+                <li><a href="#" id="createAccount"><i class="fas fa-user"></i> Sign Up</a></li>
+                <li><a href="#" title="Cart" class="cart-link"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">(0)</span></a></li>
+                <li class="dropdown">
+                    <a href="#"><i class="fas fa-bars"></i> Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-star"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="highlight box" id="home" style="margin-top: 150px;">
+        <div class="hero-content">
+            <h1>Discover the Magic of Makhana</h1>
+            <p class="subtitle">Healthy, Delicious, and 100% Natural Snacks</p>
+            <div class="hero-features">
+                <span><i class="fas fa-leaf"></i> All Natural</span>
+                <span><i class="fas fa-heart"></i> Heart Healthy</span>
+                <span><i class="fas fa-seedling"></i> Gluten Free</span>
+            </div>
+            <button onclick="document.getElementById('shop').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-shopping-bag"></i> Shop Now
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="logom.jpg" alt="Delicious Makhana" data-src="logom.jpg">
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="box">
+        <h2><i class="fas fa-store"></i> Our Flavors</h2>
+        <div class="flavors-container">
+            <div class="flavor-card">
+                <div class="flavor-name">Peri-Peri Makhana</div>
+                <img src="peri-peri.webp" alt="Peri-Peri Makhana" data-src="peri-peri.webp">
+                <p>Spicy & Bold Peri-Peri Flavor</p>
+                <div class="price">₹150</div>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+            <div class="flavor-card">
+                <div class="flavor-name">Peri-Peri & Chat Masala Makhana</div>
+                <img src="chat-masala.webp" alt="Peri-Peri & Chat Masala Makhana" data-src="chat-masala.webp">
+                <p>A Tangy Twist with Peri-Peri & Chat Masala</p>
+                <div class="price">₹150</div>
+                <button><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="box">
+        <h2><i class="fas fa-utensils"></i> Delicious Makhana Recipes</h2>
+        <p class="section-description">Discover creative and healthy ways to enjoy our premium makhana with these hand-picked recipes.</p>
+        <div class="recipes-container">
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="recipe1.webp" alt="Spicy Roasted Makhana" data-src="recipe1.webp">
+                    <div class="recipe-time">
+                        <i class="fas fa-clock"></i> 15 mins
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Spicy Roasted Makhana</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-fire"></i> Easy</span>
+                        <span><i class="fas fa-user-friends"></i> Serves 4</span>
+                        <span><i class="fas fa-leaf"></i> Healthy</span>
+                    </div>
+                    <p>A quick and healthy spicy roasted makhana snack perfect for your evening cravings. Made with our premium makhana and aromatic spices.</p>
+                    <div class="recipe-tags">
+                        <span>#Snack</span>
+                        <span>#Spicy</span>
+                        <span>#Quick</span>
+                    </div>
+                    <a href="https://www.indianhealthyrecipes.com/phool-makhana/" target="_blank" class="recipe-btn">
+                        <i class="fas fa-external-link-alt"></i> View Full Recipe
+                    </a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe-image">
+                    <img src="recipe2.webp" alt="Makhana Kheer" data-src="recipe2.webp">
+                    <div class="recipe-time">
+                        <i class="fas fa-clock"></i> 30 mins
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h3>Makhana Kheer</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-star"></i> Classic</span>
+                        <span><i class="fas fa-user-friends"></i> Serves 6</span>
+                        <span><i class="fas fa-heart"></i> Dessert</span>
+                    </div>
+                    <p>A rich and creamy dessert that combines the goodness of makhana with the sweetness of milk and cardamom. Perfect for special occasions!</p>
+                    <div class="recipe-tags">
+                        <span>#Dessert</span>
+                        <span>#Traditional</span>
+                        <span>#Festive</span>
+                    </div>
+                    <a href="https://www.vegrecipesofindia.com/makhana-kheer-recipe/" target="_blank" class="recipe-btn">
+                        <i class="fas fa-external-link-alt"></i> View Full Recipe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits Section -->
+    <section id="benefits" class="box">
+        <h2><i class="fas fa-heart"></i> Why Choose Makhana?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <i class="fas fa-seedling"></i>
+                <h3>Rich in Protein</h3>
+                <p>High protein content for muscle health</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-wheat-awn"></i>
+                <h3>Gluten Free</h3>
+                <p>Safe for gluten-sensitive individuals</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-fire"></i>
+                <h3>Low Calories</h3>
+                <p>Perfect for weight management</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-heart-pulse"></i>
+                <h3>Heart Healthy</h3>
+                <p>Supports cardiovascular health</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="box">
+        <h2><i class="fas fa-star"></i> Customer Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Absolutely love the Peri-Peri Makhana! Perfectly crunchy and flavorful."</p>
+                    <div class="testimonial-author">
+                        <img src="user1.webp" alt="Ayesha K." data-src="user1.webp">
+                        <div>
+                            <h4>Ayesha K.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Healthy, delicious, and guilt-free. My kids love it too!"</p>
+                    <div class="testimonial-author">
+                        <img src="user2.webp" alt="Raj M." data-src="user2.webp">
+                        <div>
+                            <h4>Raj M.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="box">
+        <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>10 Shaktimata nagar, kharbi <br>Nagpur, Maharashtra 400024</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p><a href="tel:+919876543210">+91 8830072717</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p><a href="mailto:contact@dil-e-cious.com">contact@dil-e-cious.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday - Saturday<br>9:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <h3>Send us a Message</h3>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone (optional)">
+                <select>
+                    <option value="">Select Subject</option>
+                    <option value="order">Order Inquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="wholesale">Wholesale Query</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="box">
+        <h2><i class="fas fa-info-circle"></i> About Us</h2>
+        <div class="about-content">
+            <img src="about.webp" alt="About Dil-E-Cious" data-src="about.webp">
+            <div class="about-text">
+              
+                <p>At Dil-E-Cious, we don’t just make snacks—we create moments of joy and opportunities for change.</p>
+
+                <p>Every bite of our makhana is a step toward a healthier you and a brighter future for someone in need. We believe that good food should nourish both the body and the soul, which is why our snacks are crafted with love, care, and the finest ingredients.</p>
+
+                    <p>Our mission is simple: to provide guilt-free, delicious snacks that fuel your day while making a real difference. With every pack of Dil-E-Cious makhana, you're not just choosing health—you’re choosing hope, because a part of what we earn goes toward shaping a better future for underprivileged children.</p>
+
+                        <p>Join us in building a world where snacking isn’t just about taste, but about purpose, passion, and positivity.</p>
+
+                            <p>Because at Dil-E-Cious, your healthy habit can change lives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#shop"><i class="fas fa-store"></i> Shop</a></li>
+                    <li><a href="#recipes"><i class="fas fa-utensils"></i> Recipes</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media for updates, recipes, and special offers!</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for exclusive offers and updates!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dil-E-Cious. All Rights Reserved. | Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> in India</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to show the floating notification
+        function showFloatingNotification(message) {
+            // Remove any existing notifications
+            const existingNotification = document.querySelector('.popup-notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+
+            // Create a new notification
+            const notification = document.createElement('div');
+            notification.className = 'popup-notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            // Automatically remove the notification after 2 seconds
+            setTimeout(() => {
+                notification.remove();
+            }, 2000);
+        }
+
+        // Attach event listener to the "Add to Cart" button
+        document.querySelectorAll('.flavor-card button').forEach(button => {
+            button.addEventListener('click', function () {
+                const flavor = this.closest('.flavor-card').querySelector('.flavor-name').textContent;
+                showFloatingNotification(`${flavor} added to cart!`);
+            });
+        });
+    });
+    </script>
+</body>
+</html>

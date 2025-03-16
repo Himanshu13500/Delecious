@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shopping Cart - Dil-E-Cious</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Dil-E-Cious Logo" data-src="logo.png">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#shop"><i class="fas fa-store"></i> Shop</a></li>
+                <li><a href="index.html#recipes"><i class="fas fa-utensils"></i> Recipes</a></li>
+                <li><a href="#" id="createAccount"><i class="fas fa-user"></i> Sign Up</a></li>
+                <li><a href="#" title="Cart" class="cart-link"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">(0)</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section id="cart" class="box">
+        <h2><i class="fas fa-shopping-cart"></i> Your Shopping Cart</h2>
+        <div class="cart-container">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span class="subtotal">₹0</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping</span>
+                    <span>₹50</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span class="total-amount">₹50</span>
+                </div>
+                <button class="checkout-btn" onclick="alert('Thank you for your order! This is a demo site, no actual payment will be processed.');">
+                    <i class="fas fa-lock"></i> Proceed to Checkout
+                </button>
+                <a href="index.html#shop" class="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html#shop"><i class="fas fa-store"></i> Shop</a></li>
+                    <li><a href="index.html#recipes"><i class="fas fa-utensils"></i> Recipes</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media for updates, recipes, and special offers!</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for exclusive offers and updates!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dil-E-Cious. All Rights Reserved. | Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> in India</p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html> 
