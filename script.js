@@ -288,6 +288,36 @@ const styles = `
         animation: fadeIn 0.5s ease-out;
     }
 
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        background-color: #f8f1e4;
+        color: #4a3f35;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        overflow-x: hidden; /* Ensure no horizontal overflow */
+    }
+
+    /* Boxed Section Styles */
+    .box {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px auto;
+        text-align: center;
+        width: calc(100% - 40px);
+        max-width: 800px;
+        animation: fadeIn 0.8s ease-out;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+    }
+
     /* Mobile Responsive Improvements */
     @media (max-width: 768px) {
         header {
